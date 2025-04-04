@@ -155,7 +155,7 @@ namespace LexiconÖvning2
             {
                 Console.WriteLine("skriv en mening med minst 3 ord så returnerar jag det tredje ordet");
                 string input = Console.ReadLine();
-                string[] splitInput = input.Split();
+                string[] splitInput = input.Split(new char[0], StringSplitOptions.RemoveEmptyEntries);
                 try
                 {
                     Console.WriteLine(splitInput[2]);
